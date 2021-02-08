@@ -23,7 +23,7 @@ def GROUP_ID = 'com.github.bfu4'
 def ARTIFACT_ID = 'test-gradle-jar'
 def SONATYPE_USERNAME = System.getenv("SONATYPE_USERNAME")
 def SONATYPE_PASSWORD = System.getenv("SONATYPE_PASSWORD")
-
+def nexusUrl = System.getenv("SONATYPE_URL")
 // In this section you declare the dependencies for your production and test code
 dependencies {
     // The production code uses the SLF4J logging API at compile time
