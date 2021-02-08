@@ -36,8 +36,19 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
+
+jar {
+   manifest {
+      attributes 'Main-Class': 'native.Main'
+   }
+}
+
 task compileLibraries {
-   commandLine 'sh', 'cd src/main/native && ./compile.sh'
+   doLast {
+     exec {
+      executable 'cd src/main/native && ./compile.sh'
+     }
+   }
 }
 
 uploadArchives {
