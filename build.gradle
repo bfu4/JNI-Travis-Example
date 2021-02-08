@@ -39,7 +39,7 @@ dependencies {
 
 jar {
    manifest {
-      attributes 'Main-Class': 'native.Main'
+      attributes 'Main-Class': 'com.github.bfu4.Main'
    }
 }
 
