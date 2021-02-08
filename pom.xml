@@ -103,7 +103,7 @@
       </execution>
     </executions>
     <configuration>
-	    <executable>src/main/java/compile.sh</executable>
+	    <executable>src/main/java/com/github/bfu4/TestGradleJar/compile.sh</executable>
     </configuration>
     </plugin>
         </plugins>
