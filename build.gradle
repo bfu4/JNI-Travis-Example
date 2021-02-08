@@ -46,7 +46,7 @@ jar {
 task compileLibraries {
    doLast {
      exec {
-      executable 'cd src/main/native && ./compile.sh'
+      executable './src/main/java/com/github/bfu4/TestGradleJar/compile.sh'
      }
    }
 }
