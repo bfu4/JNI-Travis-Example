@@ -14,7 +14,7 @@
 	<distributionManagement>
         <repository>
             <id>spigot-libraries</id>
-            <url>${env.SONATYPE_URL</url>
+	    <url>${env.SONATYPE_URL}</url>
         </repository>
     </distributionManagement>
     <build>
