@@ -1,3 +1,5 @@
+package com.github.bfu4.JNITravisExample;
+
 public class Main {
 
    public static void main(String[] args) {

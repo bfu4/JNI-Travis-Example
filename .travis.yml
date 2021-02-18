@@ -14,9 +14,6 @@ variables:
 jdk:
         - openjdk8
 
-before_install:
-  - cp settings.xml $HOME/.m2/settings.xml
-
 # restrict branches
 branches:
   only:
@@ -38,9 +35,3 @@ build:
   stage: build
   script:
     - mvn clean install
-
-# deploy script
-deploy:
-  stage: deploy
-  provider: script
-  script: "mvn $MAVEN_CLI_OPTS deploy"
